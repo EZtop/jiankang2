@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭健康管理中心 - 全家人的健康管理专家</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #4CAF50;">
+        <div class="container">
+            <a class="navbar-brand" href="#">家庭健康管理中心</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meals">营养餐</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#success">成功案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">博客</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="free-trial.html" class="btn btn-outline-light">免费试用</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页内容 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>全家人的健康管理专家</h1>
+                <p class="lead">AI驱动的一站式解决方案，帮助您和家人同步健康目标，实现家庭整体健康提升</p>
+                <div class="mt-4">
+                    <a href="free-trial.html" class="btn btn-success btn-lg">开始免费试用</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户需求分析 -->
+    <section id="user-needs" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>用户需求分析</h2>
+                <p>我们深入了解家庭健康管理的痛点，提供针对性的解决方案</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <h3>时间紧张</h3>
+                            <p>为忙碌的现代家庭提供便捷的健康管理方案，节省时间和精力。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3>家庭成员多样化需求</h3>
+                            <p>针对不同年龄段和健康状况的家庭成员，提供个性化的健康管理方案。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h3>健康预防</h3>
+                            <p>注重慢性病预防和早期干预，帮助家庭成员保持长期健康。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务部分 -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>我们的服务</h2>
+                <p>为家庭成员提供全方位的健康管理解决方案</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-activity" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>个性化健身计划</h3>
+                            <p>基于家庭成员的年龄、体型和健康状况，提供适合全家人的健身计划。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fitness-plan-details">查看详情</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-egg-fried" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>家庭营养指导</h3>
+                            <p>提供家庭共享餐计划，包含适合全家人的平衡膳食方案。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nutrition-guidance-details">查看详情</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-moon-stars" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>心理健康管理</h3>
+                            <p>提供压力管理和情绪调节指导，帮助家庭成员建立健康的心理状态。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mental-health-details">查看详情</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="services.html" class="btn btn-success">查看全部服务</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个性化健身计划详情模态框 -->
+    <div class="modal fade" id="fitness-plan-details" tabindex="-1" aria-labelledby="fitness-plan-detailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fitness-plan-detailsLabel">个性化健身计划详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>我们的个性化健身计划专为现代家庭设计，帮助您和家人保持健康的生活方式：</p>
+                    <ul>
+                        <li>根据家庭成员的年龄、体型和健康状况定制的健身方案</li>
+                        <li>包含适合全家人的运动活动，增强家庭凝聚力</li>
+                        <li>提供专业的运动指导，避免运动伤害</li>
+                        <li>支持多种运动强度选择，适应不同需求</li>
+                    </ul>
+                    <p>通过我们的个性化健身计划，您和家人可以一起享受运动的乐趣，同时改善整体健康状况。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家庭营养指导详情模态框 -->
+    <div class="modal fade" id="nutrition-guidance-details" tabindex="-1" aria-labelledby="nutrition-guidance-detailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nutrition-guidance-detailsLabel">家庭营养指导详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>我们的家庭营养指导服务帮助您和家人保持均衡的饮食：</p>
+                    <ul>
+                        <li>提供家庭共享餐计划，适合全家人的健康需求</li>
+                        <li>根据家庭成员的健康状况和饮食需求定制的食谱</li>
+                        <li>包含购物清单和食材准备指导，方便快捷</li>
+                        <li>支持多种饮食需求（如素食、低碳水等）</li>
+                    </ul>
+                    <p>通过我们的营养指导，您和家人可以享用美味健康的餐食，同时预防慢性疾病。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 心理健康管理详情模态框 -->
+    <div class="modal fade" id="mental-health-details" tabindex="-1" aria-labelledby="mental-health-detailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mental-health-detailsLabel">心理健康管理详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>我们的心理健康管理服务帮助您和家人建立健康的心理状态：</p>
+                    <ul>
+                        <li>提供压力管理和情绪调节的专业指导</li>
+                        <li>包含适合全家人的心理健康活动和练习</li>
+                        <li>提供与专业心理咨询师的一对一咨询服务</li>
+                        <li>支持家庭成员之间的心理沟通和理解</li>
+                    </ul>
+                    <p>通过我们的心理健康管理，您和家人可以更好地应对生活中的压力，保持积极的心态。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 营养餐部分 -->
+    <section id="meals" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>营养餐服务</h2>
+                <p>为全家提供健康、美味的膳食解决方案</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-egg-fried" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>儿童成长餐</h3>
+                            <p>富含营养，促进儿童健康成长。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#kids-meal-recipe">查看食谱</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-egg-fried" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>成人活力餐</h3>
+                            <p>均衡营养，支持日常活动和健身需求。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#adult-meal-recipe">查看食谱</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-egg-fried" style="font-size: 3rem; color: #4CAF50; margin-bottom: 15px;"></i>
+                            <h3>老年健康餐</h3>
+                            <p>易于消化，支持慢性病管理和健康老龄化。</p>
+                        </div>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#senior-meal-recipe">查看食谱</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="meals.html" class="btn btn-success">查看全部营养餐</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- 儿童餐食谱模态框 -->
+     <div class="modal fade" id="kids-meal-recipe" tabindex="-1" aria-labelledby="kids-meal-recipeLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="kids-meal-recipeLabel">儿童成长餐食谱</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <p>这是一份专为儿童设计的健康成长餐食谱：</p>
+                     <ul>
+                         <li>烤鸡胸肉配蔬菜：提供优质蛋白质和维生素</li>
+                         <li>全麦面包：富含膳食纤维</li>
+                         <li>水果沙拉：提供维生素和矿物质</li>
+                         <li>低脂牛奶：补充钙质和蛋白质</li>
+                     </ul>
+                     <p>这份餐食不仅营养均衡，还能帮助儿童维持健康的体重和良好的身体发育。</p>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!-- 成人餐食谱模态框 -->
+     <div class="modal fade" id="adult-meal-recipe" tabindex="-1" aria-labelledby="adult-meal-recipeLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="adult-meal-recipeLabel">成人活力餐食谱</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <p>这是一份专为成人设计的活力餐食谱：</p>
+                     <ul>
+                         <li>橄榄油煎三文鱼：富含Omega-3脂肪酸</li>
+                         <li>烤红薯：提供优质碳水化合物和膳食纤维</li>
+                         <li>蒸西兰花：富含维生素和抗氧化物</li>
+                         <li>无糖绿茶：提供抗氧化物和少量咖啡因</li>
+                     </ul>
+                     <p>这份餐食能够提供持久的能量，支持日常活动和健身需求，同时有助于维持健康的体重。</p>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!-- 老年餐食谱模态框 -->
+     <div class="modal fade" id="senior-meal-recipe" tabindex="-1" aria-labelledby="senior-meal-recipeLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="senior-meal-recipeLabel">老年健康餐食谱</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <p>这是一份专为老年人设计的健康餐食谱：</p>
+                     <ul>
+                         <li>清蒸鱼：易于消化，提供优质蛋白质</li>
+                         <li>南瓜粥：富含膳食纤维和维生素A</li>
+                         <li>凉拌菠菜：提供铁质和叶酸</li>
+                         <li>温热的柠檬水：促进消化和水分摄入</li>
+                     </ul>
+                     <p>这份餐食易于消化，能够帮助老年人维持良好的营养状态，同时支持慢性病的管理。</p>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <!-- 成功案例 -->
+    <section id="success" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>成功案例</h2>
+                <p>看看其他家庭如何通过我们的平台改善健康状况</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="张女士" class="rounded-circle" width="60">
+                            <div class="ms-3">
+                                <h5>张女士</h5>
+                                <p>34岁，2个孩子的母亲</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"产后恢复一直是我的难题，家庭健康管理中心的个性化健身计划和营养指导帮助我重新找回自信。现在孩子也跟着爸爸一起参与健身活动，家庭氛围更加融洽了。"</p>
+                        <div class="text-end">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#story1">查看详情</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="李先生" class="rounded-circle" width="60">
+                            <div class="ms-3">
+                                <h5>李先生</h5>
+                                <p>45岁，企业管理者</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"作为工作繁忙的职场人士，我很难兼顾家庭健康。这个平台的AI同步功能解决了我的困扰，现在我和家人都有规律的健康计划，身体状况明显改善。"</p>
+                        <div class="text-end">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#story2">查看详情</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="王奶奶" class="rounded-circle" width="60">
+                            <div class="ms-3">
+                                <h5>王奶奶</h5>
+                                <p>68岁，退休教师</p>
+                            </div>
+                        </div>
+                        <p class="card-text">"我有轻微的糖尿病和高血压，这个平台的慢性病管理方案帮我很好地控制了病情。儿子儿媳也很满意，全家人的健康都在改善。"</p>
+                        <div class="text-end">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                        </div>
+                        <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#story3">查看详情</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-success">查看更多案例</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例详情模态框 -->
+    <div class="modal fade" id="story1" tabindex="-1" aria-labelledby="story1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story1Label">张女士的故事</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>张女士是一位34岁的母亲，有两个孩子。产后她遇到了很多健康问题，包括体重难以恢复和精力不足。通过家庭健康管理中心的个性化健身计划和营养指导，她逐渐恢复了产前的身材，精力也明显改善。现在，她和孩子们一起参与家庭健身活动，家庭氛围更加融洽。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="story2" tabindex="-1" aria-labelledby="story2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story2Label">李先生的故事</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>李先生是一位45岁的企业管理者，工作繁忙，很难抽出时间管理家庭健康。通过家庭健康管理中心的AI同步功能，他为全家制定了规律的健康计划。现在，他和家人都养成了健康的习惯，身体状况明显改善，家庭生活质量也得到了提升。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="story3" tabindex="-1" aria-labelledby="story3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story3Label">王奶奶的故事</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>王奶奶是一位68岁的退休教师，患有轻微的糖尿病和高血压。通过家庭健康管理中心的慢性病管理方案，她学会了如何通过饮食和适度运动控制病情。现在，她的健康状况稳定，生活质量显著提高，全家人都为她的健康状况感到欣慰。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 博客部分 -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>健康博客</h2>
+                <p>获取最新的健康资讯和实用建议</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25200e237f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="家庭健身" class="img-fluid blog-image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success">健身</span>
+                                <small>2023-06-15</small>
+                            </div>
+                            <h5 class="card-title">10个适合全家人的居家健身活动</h5>
+                            <p class="card-text">无需专业设备，在家中就能进行的趣味健身活动，增强家庭凝聚力的同时改善健康状况...</p>
+                            <a href="https://zh.acpny.com/blog/healthy-living" class="btn btn-sm btn-outline-primary">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="营养餐" class="img-fluid blog-image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success">营养</span>
+                                <small>2023-06-10</small>
+                            </div>
+                            <h5 class="card-title">如何设计一周的家庭营养餐计划</h5>
+                            <p class="card-text">均衡的营养餐计划可以帮助您和家人保持健康体重，提高免疫力，预防慢性疾病...</p>
+                            <a href="https://zh.acpny.com/blog/healthy-living" class="btn btn-sm btn-outline-primary">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://zh.acpny.com/blog/healthy-living" class="btn btn-success">查看全部文章</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>如何开始使用平台？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以先注册免费试用账号，然后输入家庭成员的基本信息。我们的系统会根据每个成员的特点自动生成个性化健康计划。您也可以选择我们的会员套餐获得更全面的服务。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>平台支持哪些健康设备？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们支持多种主流健康设备品牌，包括Apple Watch、Fitbit、Garmin、小米手环等。您可以将设备数据同步到平台，实现更全面的健康管理。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>可以为家庭成员设置不同的隐私级别吗？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，每个家庭成员都可以设置自己的隐私级别。您可以选择哪些健康数据对其他家庭成员可见，哪些数据仅自己可见。同时，您也可以指定健康顾问的访问权限。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>如何获得专业健康顾问的帮助？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>所有高级套餐用户都可以获得专业健康顾问的指导。您可以通过平台预约一对一咨询，或者通过我们的即时通讯功能随时提问。我们也会根据您的情况安排定期回访。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>是否提供线下健康活动？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们定期举办线下健康活动，包括健身工坊、营养讲座、亲子健康活动等。会员可以在平台上查看活动日程并报名参加。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h5>如何更改或暂停会员服务？</h5>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以在会员中心随时更改服务套餐或暂停会员服务。我们提供灵活的会员管理方案，不收取额外费用。如果您有任何疑问，我们的客服团队随时为您提供帮助。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="mt-5" style="background-color: #333; color: white; padding: 20px 0;">
+        <div class="container text-center">
+            <p>© 2023 家庭健康管理中心 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
