@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- 在原有样式表下方添加 -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>家庭健康管理中心 - 全家人的健康管理专家</title>
@@ -8,8 +11,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
+<script>
+  // Firebase配置（替换为你自己的配置）
+  const firebaseConfig = {
+    apiKey: "AIzaSyB_Mc11PYNbe-l1bEGKF8FxQ9j-FZqE728",
+    authDomain: "familyhealth-45c8a.firebaseapp.com",
+    databaseURL: "https://familyhealth-45c8a-default-rtdb.firebaseio.com",
+    projectId: "familyhealth-45c8a",
+    storageBucket: "familyhealth-45c8a.firebasestorage.app",
+    messagingSenderId: "1018328360135",
+    appId: "1:1018328360135:web:c34bf28dfb9df692598ae2"
+  };
+
+  // 初始化Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+
+  // 更新访问计数
+  function updateVisitCount() {
+    const countRef = database.ref('visitCount');
+    countRef.transaction((currentCount) => {
+      return (currentCount || 0) + 1;
+    });
+  }
+
+  function displayVisitCount() {
+    const countRef = database.ref('visitCount');
+    countRef.on('value', (snapshot) => {
+      const count = snapshot.val();
+      document.getElementById('visit-counter').innerText = `总访问量：${count}`;
+    });
+  }
+
+
+  window.onload = function() {
+    updateVisitCount();
+    displayVisitCount();
+  };
+</script>
 <body>
-    <!-- 导航栏 -->
+
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #4CAF50;">
         <div class="container">
             <a class="navbar-brand" href="#">家庭健康管理中心</a>
@@ -44,7 +85,7 @@
         </div>
     </nav>
 
-    <!-- 首页内容 -->
+
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -57,7 +98,7 @@
         </div>
     </section>
 
-    <!-- 用户需求分析 -->
+
     <section id="user-needs" class="py-5 bg-light">
         <div class="container">
             <div class="section-title">
@@ -102,7 +143,6 @@
         </div>
     </section>
 
-    <!-- 服务部分 -->
     <section id="services" class="py-5">
         <div class="container">
             <div class="section-title">
@@ -147,7 +187,6 @@
         </div>
     </section>
 
-    <!-- 个性化健身计划详情模态框 -->
     <div class="modal fade" id="fitness-plan-details" tabindex="-1" aria-labelledby="fitness-plan-detailsLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -172,7 +211,7 @@
         </div>
     </div>
 
-    <!-- 家庭营养指导详情模态框 -->
+
     <div class="modal fade" id="nutrition-guidance-details" tabindex="-1" aria-labelledby="nutrition-guidance-detailsLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -197,7 +236,7 @@
         </div>
     </div>
 
-    <!-- 心理健康管理详情模态框 -->
+
     <div class="modal fade" id="mental-health-details" tabindex="-1" aria-labelledby="mental-health-detailsLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -222,7 +261,7 @@
         </div>
     </div>
 
-    <!-- 营养餐部分 -->
+
     <section id="meals" class="py-5 bg-light">
         <div class="container">
             <div class="section-title">
@@ -267,7 +306,7 @@
         </div>
     </section>
 
-     <!-- 儿童餐食谱模态框 -->
+
      <div class="modal fade" id="kids-meal-recipe" tabindex="-1" aria-labelledby="kids-meal-recipeLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg">
              <div class="modal-content">
@@ -292,7 +331,6 @@
          </div>
      </div>
 
-     <!-- 成人餐食谱模态框 -->
      <div class="modal fade" id="adult-meal-recipe" tabindex="-1" aria-labelledby="adult-meal-recipeLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg">
              <div class="modal-content">
@@ -317,7 +355,7 @@
          </div>
      </div>
 
-     <!-- 老年餐食谱模态框 -->
+
      <div class="modal fade" id="senior-meal-recipe" tabindex="-1" aria-labelledby="senior-meal-recipeLabel" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg">
              <div class="modal-content">
@@ -342,7 +380,7 @@
          </div>
      </div>
 
-    <!-- 成功案例 -->
+
     <section id="success" class="py-5">
         <div class="container">
             <div class="section-title">
@@ -417,7 +455,7 @@
         </div>
     </section>
 
-    <!-- 成功案例详情模态框 -->
+
     <div class="modal fade" id="story1" tabindex="-1" aria-labelledby="story1Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -469,7 +507,7 @@
         </div>
     </div>
 
-    <!-- 博客部分 -->
+
     <section id="blog" class="py-5 bg-light">
         <div class="container">
             <div class="section-title">
@@ -512,7 +550,7 @@
         </div>
     </section>
 
-    <!-- 常见问题 -->
+
     <section id="faq" class="py-5">
         <div class="container">
             <div class="section-title">
@@ -575,10 +613,11 @@
         </div>
     </section>
 
-    <!-- 页脚 -->
+
     <footer class="mt-5" style="background-color: #333; color: white; padding: 20px 0;">
         <div class="container text-center">
             <p>© 2023 家庭健康管理中心 版权所有</p>
+            <p id="visit-counter" style="margin: 5px 0; font-size: 0.9em;"></p>
         </div>
     </footer>
 
